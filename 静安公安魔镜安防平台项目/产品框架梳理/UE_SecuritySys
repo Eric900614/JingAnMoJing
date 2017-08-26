@@ -1,0 +1,41 @@
+# 静安公安魔镜安防大数据可视化平台
+
+
+## 环境概述
+
+* 开发引擎： UnrealEngine 4.17
+* 平台： Windows ExE
+* 网络连接：　Socket & Http Request
+* 配置文件类型：Json
+
+## Map Points
+* 城市大地图：LowPoly城市模型，基于业务模块进行数字沙盘数据可视化
+
+![refmap](..\产品框架梳理\picts\refmap.png)
+
+* 重点监控区域：整合部署预览，实时监控，预测分析功能
+![pointmap](..\产品框架梳理\picts\pointmap.png)
+
+## 功能点细分
+### -基础架构
+> + MessageCenter：消息中心，监听注册消息（Server，client）
+> + DataCenter：数据中心，所有数据保存，加工，获取
+
+### -业务模块
+> + 警情模块
+> + 交通模块
+> ![jiaotongref](..\产品框架梳理\picts\jiaotongref.png)
+
+### -对象模块
+> + 警员模块
+> + Camera模块
+
+### -表现模块
+> + UI模块
+> + 路点追踪
+> + 热力图
+
+> ![hotmap](..\产品框架梳理\picts\hotmap.png)
+
+> + 线框模式
+> ![lineref](..\产品框架梳理\picts\lineref.png)
