@@ -1,0 +1,22 @@
+//警情类型
+Enum_WarningType:{
+    Steal,
+    Kill,
+    Traffic Accident
+}
+
+//log结构
+LogData:{
+    DateTime LogTime,
+    string LogContent
+}
+
+//警情数据结构
+Data:{
+    int id,//编号
+    DateTime SpawnTime,//触发时间
+    Vector3 SpawnPos,//触发地址
+    WarningType warningType,//类型
+    List<LogData> logs,//所有log
+    List<PoliceMember> relatedPolices//所有关联警察
+}

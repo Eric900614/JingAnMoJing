@@ -1,0 +1,11 @@
+
+
+
+//大地图警员数据结构
+Data:{
+    int id,//编号
+    string name,//姓名
+    string callID,//电台号
+    string phone,//联系方式
+    Vector3 CurrentPos//当前地方
+}

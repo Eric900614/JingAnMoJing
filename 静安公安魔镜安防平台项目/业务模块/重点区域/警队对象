@@ -1,0 +1,89 @@
+//构成
+USTRUCT(BlueprintType)
+struct FSys_UnitMember
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		FString MemberName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		FString MemberCount;
+};
+
+// 小队
+USTRUCT(BlueprintType)
+struct FSys_UnitPolice
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		FString UnitName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		int32 UnitCount;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		FString UnitLeader;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		FString UnitLeaderPhone;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		FString UnitCall;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		FString UnitColor;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		int32 Floor;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		float UnitFlagPosX;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		float UnitFlagPosY;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		float UnitFlagPosZ;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "ExhConfig")
+		TArray<FSys_UnitMember> MembersArray;
+};
+
+//大队
+USTRUCT(BlueprintType)
+struct FSys_PoliceTeam
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		FString TeamName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		int32 TeamCount;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		FString TeamLeader;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		FString TeamLeaderPhone;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		FString TeamCall;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		FString TeamColor;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		float TeamFlagPosX;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		float TeamFlagPosY;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SysData")
+		float TeamFlagPosZ;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "ExhConfig")
+		TArray<FSys_UnitPolice> UnitsArray;
+};
